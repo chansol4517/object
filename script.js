@@ -22,10 +22,13 @@ class Student2 {
 	}
 
 	inform() {
-		console.log('My name is ' + this.name + '! ' + 'i am ' + this.age + 'years old');
+		//template literal '문자열 안에 변수를 삽입하기 위한 es6전용의 템플릿 문법'
+		// console.log('My name is ' + this.name + '! ' + 'i am ' + this.age + 'years old');
+		console.log('my name is ${this.name}. and i and ${this.age} years old');
 	}
 }
+//${}이게 제일 편함
 
-const instance2 = new Student1({ name: 'mark', age: 24 });
+const instance2 = new Student1({ name: 'mark', age: 26 });
 console.log(instance2);
 instance2.inform();
